@@ -1,0 +1,44 @@
+<b><p style="text-align: center;">student Information!</p></b>
+
+
+<h1 style="text-align: center;"> Students list </h1>
+<table border="2"  align="center" class="table">
+    <thead class="thead-dark">
+        <th>Name of students</th>
+        <th>EMAIL</th>
+        <th>Marks</th>
+        
+        
+    </thead>
+
+
+    <tbody *ngFor="let item of student" >
+        <tr >
+          
+            <td scope="row">{{item.Name}}</td>
+            <td scope="row" >{{item.EMAIL}}</td>
+            <td [ngClass]="{ 'red-text': item.Marks < 50 , 'green-text': item.Marks >= 50 }" scope="row">{{item.Marks}}</td>     
+            <td *ngIf="item.Marks>=50" class="pass" scope="row">pass</td>
+            <td *ngIf="item.Marks< 50" class="Fall" scope="row">Fall</td>
+
+              
+            </tr>
+    </tbody>
+</table>
+
+
+<!-- <img src="assets/image3.jpg" alt="Girl in a jacket" width="400" height="200">  -->
+
+<figure>
+    <img src="assets/image6.jpg" alt="student" style="width:100%">
+    <figcaption>Excellent Student</figcaption>
+  </figure>
+  
+
+ 
+
+
+ 
+
+
+<router-outlet></router-outlet>

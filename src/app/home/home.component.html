@@ -1,0 +1,69 @@
+
+<div  class="fadeIn first" style="background-image: url('assets/image22.jpg');">
+
+<h1 style="text-align: center;" class="text-center text-white pt-5"> WELCOME ALL </h1>
+
+
+
+<!-- <div style="text-align: center; color: blue;">
+   
+  <em><h3> HELLO {{emp1}} </h3></em>
+
+ <h3>  HELLO  {{emp2}}</h3>
+
+ <h3>  HELLO  {{emp3}}</h3>
+
+ <h3>  HELLO  {{emp4}}</h3>
+
+ <h3>  HELLO  {{emp5}}</h3>
+
+</div>
+  -->
+  <div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+            <div id="login-box" class="col-md-12">
+ 
+                <div class="form-group">
+    <h3  class="text-info" style="color: black;"> Your Name is :{{userinput1}}  </h3>
+   <input  class="form-control" type="password"  [(ngModel)]="userInput1" (input)="updateParagraph1()">
+</div>
+   <p>{{userInput1}}</p> 
+   
+   
+   </div>
+   
+
+   <div class="form-group">
+ 
+
+ <h3 class="text-info" style="color: black;"> Your Password is :{{userinput}}  </h3>
+<input  class="form-control" type="password"  [(ngModel)]="userInput" (input)="updateParagraph()">
+<p>{{userInput}}</p> 
+
+
+</div>
+</div>
+
+<footer  class="text-center text-lg-start text-white">
+
+<p [ngStyle]="footermain"><b><footer style="text-align: center; background-color: azure;">
+    
+    <p>Author: SARA ALHINAI</p>
+    <p><a href="SARA:hege@example.com">SARA@example.com</a></p>
+  </footer></b></p>
+
+
+
+
+<!-- <nav class="navbar navbar-light bg-light">
+
+
+  <ul class="ul-div" [ngStyle]="{'background-color':'green'}">
+    <li [routerLink]="['/student']" > Go to student mark </li>
+
+
+
+  </ul>
+  </nav> -->
+
